@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <div id="name-input">
+            <label id="name-label">Name</label>
+            <input required type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div id="email-input">
+            <label id="email-label">Email</label>
+            <input required type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+
+        <div id="age-input">
+            <label id="number-label">Age (optional)</label>
+            <input type="number" id="number" placeholder="Enter your age" min="5" max="200" />
+        </div>
+
+        <div id="radio-input">
+            <label>Which option best describes your current role?</label>
+            <div id="radio-box">
+                <div id="radio-choice">
+                    <input type="radio" name="A" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div id="radio-choice">
+                    <input type="radio" name="B" value="B">
+                    <label for="B">B</label>
+                </div>
+                <div id="radio-choice">
+                    <input type="radio" name="C" value="C">
+                    <label for="C">C</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="select-input">
+            <label>Which option best describes your current role?</label>
+            <select id="dropdown" placeholder="Select your option">
+                <option value="" disabled selected>Select your option</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </div>
+
+        <div id="checkbox-input">
+            <label>Which option best describes your current role?</label>
+            <div id="checkbox-box">
+                <div id="checkbox-choice">
+                    <input type="checkbox" name="A" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div id="checkbox-choice">
+                    <input type="checkbox" name="B" value="B">
+                    <label for="B">B</label>
+                </div>
+                <div id="checkbox-choice">
+                    <input type="checkbox" name="C" value="C">
+                    <label for="C">C</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="textarea-input">
+            <label>Any comments or suggestions?</label>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div id="submit-but">
+            <input type="submit" value="Submit" id="submit" />
+        </div>
+    </form>
+</body>
+
+</html>
