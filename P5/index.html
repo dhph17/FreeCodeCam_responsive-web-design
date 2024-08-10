@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/00d3f63b88.js" crossorigin="anonymous"></script>
     <title>Build a Personal Portfolio Webpage - FreeCodeCamp</title>
 </head>
 
@@ -19,7 +18,27 @@
                 <li class="nav-link"><a href="#project-section">Work</a></li>
                 <li class="nav-link"><a href="#contact-section">Contact</a></li>
             </ul>
+            <label for="nav_mobile-check" class="nav_mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <input type="checkbox" name="" hidden id="nav_mobile-check">
+
+            <label for="nav_mobile-check" class="nav_overlay">
+
+            </label>
+            <div class="nav_mobile">
+                <label for="nav_mobile-check" class="nav_mobile-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="nav_mobile-list">
+                    <li class="nav_mobile-link"><a href="#welcome-section">About</a></li>
+                    <li class="nav_mobile-link"><a href="#project-section">Work</a></li>
+                    <li class="nav_mobile-link"><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+
     </header>
     <main>
         <section class="main-section" id="welcome-section">
