@@ -44,14 +44,14 @@ body {
 .nav-list a {
     display: block;
     font-size: 2.2rem;
-    padding: 1.35rem 2rem;
+    padding: 1.45rem 2rem;
 }
 
 .nav-list a:hover {
     background: var(--main-blue);
 }
 
-#navbar ul li a {
+.nav-link a {
     color: var(--main-white);
     text-decoration: none;
     font-size: x-large;
@@ -59,6 +59,84 @@ body {
 
 .nav-link:hover {
     background-color: var(--main-blue);
+}
+
+.nav_mobile-btn {
+    display: none;
+}
+
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav_mobile {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    background-color: white;
+}
+
+.nav_mobile ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.nav_mobile-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 2rem 0 0;
+    font-size: 2rem;
+}
+
+.nav_mobile-link a {
+    color: var(--main-red);
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+#nav_mobile-check:checked~.nav_overlay {
+    display: block;
+}
+
+#nav_mobile-check:checked~.nav_mobile {
+    transform: translateX(0%);
+}
+
+@media (max-width: 1023px) {
+    .nav-list {
+        display: none !important;
+    }
+
+    .nav_mobile-btn {
+        display: block;
+        font-size: 2.5rem;
+        color: var(--main-white);
+        margin-right: 2rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .main-section {
@@ -193,7 +271,7 @@ hr {
 
     .project-show {
         background-color: var(--main-gray);
-        width: 12%;
+        width: 40%;
         height: 5vh;
         margin-top: 10%;
         font-size: 0.7rem;
@@ -246,6 +324,38 @@ hr {
     margin-top: -5%;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1023px) {
+    .social-lists {
+        margin-top: -5%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    #contact-section_header {
+        font-size: 3em;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .social-item {
+        margin-top: 10% !important;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        text-align: center;
+        width: 70%;
+        font-size: 1em !important;
+    }
+
+    ;
 }
 
 .social-item {
